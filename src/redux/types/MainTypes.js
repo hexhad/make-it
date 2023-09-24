@@ -1,0 +1,5 @@
+export const MAIN = {
+  LOADING:'MAIN/LOADING',
+  SUCCESS:'MAIN/SUCCESS',
+  FAILED:'MAIN/FAILED',
+}
