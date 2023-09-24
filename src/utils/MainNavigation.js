@@ -1,5 +1,8 @@
 import { CommonActions, createNavigationContainerRef, StackActions } from "@react-navigation/native";
 
+/**
+ * REFERENCE : https://reactnavigation.org/docs/2.x/stack-actions/
+ * */
 export const navigationRef = createNavigationContainerRef();
 const navigate = (path, params) => {
   if (navigationRef.isReady()) {
