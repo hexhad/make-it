@@ -1,8 +1,5 @@
 import { CommonActions, createNavigationContainerRef, StackActions } from "@react-navigation/native";
 
-/**
- * REFERENCE : https://reactnavigation.org/docs/2.x/stack-actions/
- * */
 export const navigationRef = createNavigationContainerRef();
 const navigate = (path, params) => {
   if (navigationRef.isReady()) {
@@ -35,6 +32,18 @@ const restStack = (routes) => {
     navigationRef.dispatch(resetAction);
   }
 };
+
+
+// REFERENCE : https://reactnavigation.org/docs/2.x/stack-actions/
+
+
+
+ // navigationRef.dispatch(StackActions.replace(name, params));
+ // navigationRef.dispatch(StackActions.push(name, params));
+ // navigationRef.dispatch(StackActions.popToTop());
+ // navigationRef.dispatch(DrawerActions.openDrawer());
+ // navigationRef.dispatch(DrawerActions.jumpTo(name, params));
+ // navigationRef.dispatch(TabActions.jumpTo(name, params));
 
 export const nav = {
   navigate,
