@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 
 export default () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName={ScreenNames.ONBOARDING_SCREEN} screenOptions={{ headerShown: false }}>
       <Stack.Screen
         name={ScreenNames.ONBOARDING_SCREEN}
         component={OnboardingScreen}
